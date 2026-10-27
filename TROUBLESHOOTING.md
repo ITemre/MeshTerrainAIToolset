@@ -1,4 +1,4 @@
-# Corivo Mesh Terrain Toolset: troubleshooting
+# Mesh Terrain AI Toolset: troubleshooting
 
 | Symptom | Check |
 | --- | --- |

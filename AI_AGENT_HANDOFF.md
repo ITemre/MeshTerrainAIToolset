@@ -1,9 +1,9 @@
-# Corivo Mesh Terrain Toolset: agent guide
+# Mesh Terrain AI Toolset: agent guide
 
 ## Copy this setup prompt to your assistant
 
 ```text
-Set up the purchased Corivo Mesh Terrain Toolset plugin for my Unreal Engine 5.8 project.
+Set up the purchased Mesh Terrain AI Toolset plugin for my Unreal Engine 5.8 project.
 Find the .uproject and ask me to select it if there are several. Verify the plugin
 is already installed through Fab or in Project/Plugins/MeshTerrainToolset.
 Enable the plugin and its declared dependencies without replacing other settings.
@@ -11,7 +11,7 @@ Enable ModelContextProtocol, restart when necessary, and connect to the editor's
 native Streamable HTTP MCP server on its configured loopback port.
 Run list_toolsets and describe_toolset; verify these identifiers:
 MeshTerrainToolset.MeshTerrainToolset
-Read https://github.com/ITemre/MeshTerrainToolset/blob/main/README.md and the tool reference.
+Read https://github.com/ITemre/MeshTerrainAIToolset/blob/main/README.md and the tool reference.
 Start with read-only inspection in a disposable project and show me the first result.
 ```
 

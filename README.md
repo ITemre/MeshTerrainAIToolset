@@ -1,4 +1,4 @@
-# Corivo Mesh Terrain Toolset
+# Mesh Terrain AI Toolset
 
 Create and inspect Mesh Terrain, import heightmaps and manage terrain modifiers through Unreal Editor's native MCP server.
 
@@ -58,7 +58,7 @@ This documentation accompanies release preparation. It is not a claim that Fab h
 
 ## Support
 
-Report reproducible problems through [GitHub issues](https://github.com/ITemre/MeshTerrainToolset/issues). Include the engine version, plugin version, tool name, minimal arguments and error text. Remove credentials and private project data from reports.
+Report reproducible problems through [GitHub issues](https://github.com/ITemre/MeshTerrainAIToolset/issues). Include the engine version, plugin version, tool name, minimal arguments and error text. Remove credentials and private project data from reports.
 
 ## Licence
 
