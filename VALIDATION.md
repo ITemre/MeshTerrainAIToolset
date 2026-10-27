@@ -1,18 +1,20 @@
 # Validation status
 
-Checks recorded on 27 October 2026, using Unreal Engine 5.8.4 and Windows 64-bit in an isolated project. Original production projects were not edited.
+Practical checks recorded on 27 October 2026, using Unreal Engine 5.8.4 / Win64 in isolated local projects. Production projects and the original backup ZIPs were unchanged.
 
-| Gate | Result |
-| --- | --- |
-| Clean Win64 BuildPlugin with strict includes | Passed |
-| Fresh editor loading and tool registration | Passed |
-| Native MCP HTTP connection and tool schemas | Passed |
-| Existing automation suite | 44 passed, including 22 with expected diagnostic warnings; zero failed |
-| Native MCP terrain enumeration | Passed |
-| Repeated temporary-world test setup | Corrected to allocate unique world names; full suite passed afterwards |
-| Visual and gameplay acceptance | Pending where applicable |
-| Performance on representative buyer content | Pending |
-| Fab approval and product publication | Not submitted |
+## Technical and practical checks
 
-Successful compilation or automation does not establish visual quality, gameplay behaviour or performance. Mac, Linux and other engine versions have not been accepted. Expected diagnostic warnings are included in the test counts and must not be described as warning-free.
+- Clean Win64 BuildPlugin with strict includes: passed.
+- Fresh editor loading, native MCP tool discovery and schema reads: passed.
+- Existing automation suite: 44 passed, zero failed (22 tests include expected diagnostic warnings).
+- Created a 100 m terrain, changed its centre to 900 cm, rebuilt and waited for completion.
+- Saved and reopened the test level; the 900 cm height was retained.
+- The test terrain was rendered and the resulting image was inspected.
 
+## Scope of acceptance
+
+These are reproducible technical and visual smoke checks on the named fixtures. They do not claim exhaustive character compatibility or performance at arbitrary project scale. Mac, Linux, other engine versions, large production Landscapes and all possible third-party rigs are outside the validated scope. Third-party example assets used locally for testing are not included in the product package.
+
+## Fab status
+
+Prepared as a release candidate. Product approval, submission and publication are separate from these tests.
