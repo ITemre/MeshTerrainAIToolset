@@ -57,7 +57,7 @@ Please set up the "Mesh Terrain AI Toolset" Unreal Engine plugin for me and conn
 
 ## Installation and MCP connection
 
-1. Install the product from Fab when available, or copy the purchased `MeshTerrainToolset` plugin folder to `<Project>/Plugins/` and build the project with a C++ toolchain supported by UE 5.8.
+1. Install the product from Fab when available, or copy the purchased `MeshTerrainToolset` plugin folder to `<Project>/Plugins/`. The package ships Win64 editor binaries for UE 5.8 and the source; a C++ toolchain is only needed if the editor asks to rebuild the plugin.
 2. Enable `MeshTerrainToolset` and its dependencies under **Edit > Plugins**, plus **Model Context Protocol**. Restart the editor.
 3. Start the editor's native MCP server with `-ModelContextProtocolStartServer`, or enable auto start under **Project Settings > Plugins > Model Context Protocol**.
 4. Connect your client using Streamable HTTP. The default endpoint is `http://127.0.0.1:8000/mcp`; confirm the port in the editor settings. Keep it on loopback.
