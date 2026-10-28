@@ -4,6 +4,42 @@ Create and inspect Mesh Terrain, import heightmaps and manage terrain modifiers 
 
 Public documentation for the commercial Fab plugin from Corivo. This repository contains documentation only. The plugin source, binaries and project files are distributed separately through Fab.
 
+<!-- AI_SETUP_PROMPT_START -->
+## Set up with your AI assistant
+
+Copy the whole block below into an AI assistant that can run commands, edit files on your computer,
+and connect to MCP servers. It checks the installation, enables the required plugins and connects itself.
+
+```text
+Please set up the "Mesh Terrain AI Toolset" Unreal Engine plugin for me and connect yourself to it.
+
+1. Find my Unreal project (.uproject). Ask me to select it if there are several. It must use
+   Unreal Engine 5.8 on Windows. Preserve unsaved editor work before editing settings or restarting.
+2. Check that the purchased plugin is installed: either in the engine under
+   Engine/Plugins/Marketplace or as <Project>/Plugins/MeshTerrainToolset. If it is missing, stop and
+   tell me to install it from Fab first.
+3. Enable these plugins in the .uproject "Plugins" list (add entries with "Enabled": true and
+   preserve all other settings): MeshTerrainToolset, ToolsetRegistry, MeshPartition,
+   ModelContextProtocol.
+4. Start the editor's native MCP server with -ModelContextProtocolStartServer, or enable auto start
+   in Project Settings > Plugins > Model Context Protocol and restart safely. Confirm the server's
+   configured port. The default endpoint is http://127.0.0.1:8000/mcp. Verify it belongs to this project.
+5. Add that endpoint to your own MCP configuration as an HTTP (Streamable HTTP) server named
+   "unreal", then reload your MCP connection if needed. Preserve existing server entries; use a
+   different name if "unreal" already points to another project. Keep the endpoint on loopback.
+6. Call list_toolsets and confirm every identifier below is listed. Call describe_toolset for each:
+   MeshTerrainToolset.MeshTerrainToolset
+7. Read the agent guide at
+   https://github.com/ITemre/MeshTerrainAIToolset/blob/main/AI_AGENT_HANDOFF.md
+   (also shipped as Documentation/AI_AGENT_HANDOFF.md) and follow the tool reference and project rules.
+8. Use read-only terrain inspection for the first check. Do not create, delete, edit or rebuild
+   terrain during setup.
+   Tell me in two sentences which project and endpoint are connected, whether all required toolsets
+   are available, and what I can ask you to do next.
+```
+
+<!-- AI_SETUP_PROMPT_END -->
+
 ## Features
 
 - Create and list Mesh Partition terrain actors.
