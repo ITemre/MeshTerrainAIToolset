@@ -194,7 +194,7 @@ static UE::MeshPartition::AMeshPartition* CreateTerrain( const FVector2D& Size, 
 
 Creates a flat rectangular terrain.
 @param Size World size along X and Y (cm).
-@param Resolution Number of quads along X and Y. Fixes the detail of the base sections.
+@param Resolution Number of quads along X and Y, at most 4194304 (2048 x 2048) in total. Fixes the detail of the base sections.
 @param Location World position of the terrain's center (cm).
 @param MaxTrianglesPerSection The terrain is split into equal sections no larger than this.
 @return The new terrain.
@@ -208,7 +208,7 @@ static UE::MeshPartition::AMeshPartition* ImportHeightmap( const FString& FilePa
 Creates a terrain from a grayscale heightmap.
 @param FilePath Absolute path of an 8 or 16 bit PNG file.
 @param Size World size (cm). X and Y are the footprint, Z is the height of a white pixel above a black one.
-@param Resolution Number of quads along X and Y. The heightmap is resampled to it.
+@param Resolution Number of quads along X and Y, at most 4194304 (2048 x 2048) in total. The heightmap is resampled to it.
 @param Location World position of the terrain's center at black level (cm).
 @param MaxTrianglesPerSection The terrain is split into equal sections no larger than this.
 @return The new terrain.

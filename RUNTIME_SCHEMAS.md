@@ -426,7 +426,7 @@ Captured from `describe_toolset` in the native Unreal Engine 5.8.4 MCP server. T
           },
           "resolution": {
             "title": "IntPoint",
-            "description": "Number of quads along X and Y. The heightmap is resampled to it.",
+            "description": "Number of quads along X and Y, at most 4194304 (2048 x 2048) in total. The heightmap is resampled to it.",
             "type": "object",
             "properties": {
               "x": {
@@ -911,7 +911,7 @@ Captured from `describe_toolset` in the native Unreal Engine 5.8.4 MCP server. T
           },
           "resolution": {
             "title": "IntPoint",
-            "description": "Number of quads along X and Y. Fixes the detail of the base sections.",
+            "description": "Number of quads along X and Y, at most 4194304 (2048 x 2048) in total. Fixes the detail of the base sections.",
             "type": "object",
             "properties": {
               "x": {

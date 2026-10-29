@@ -52,6 +52,8 @@ Please set up the "Mesh Terrain AI Toolset" Unreal Engine plugin for me and conn
 
 - Unreal Engine 5.8, Windows 64-bit editor. Other engines and platforms are not claimed.
 - Engine plugins: **ToolsetRegistry**, **MeshPartition**, **ModelContextProtocol**.
+- Mesh Terrain is Epic's experimental Mesh Partition system. Use DirectX 12 as the default RHI (Project Settings > Platforms > Windows > Default RHI) and a current GPU driver.
+- Terrains are limited to 2048 x 2048 quads. Verified on an NVIDIA GeForce RTX 4080 SUPER (driver 617.42) with DirectX 12 and DirectX 11.
 - An HTTP MCP-compatible assistant or client. The client and any paid AI service are separate from this product.
 - Editor only. The tools do not run in a packaged game.
 
